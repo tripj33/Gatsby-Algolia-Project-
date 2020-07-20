@@ -1,0 +1,72 @@
+@import "../components/settings.scss";
+
+.hero_banner {
+  position: relative;
+  img {
+    display: flex;
+    align-self: stretch;
+    flex-grow: 1;
+    height: calc(100vh - 150px);
+    width: 100%;
+    position: relative;
+    margin-bottom: 0;
+  }
+  div {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    // background: rgba(59, 59, 59, 0.5);
+    background: rgba(3, 66, 111, 0.7);
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    h2,
+    h3 {
+      color: #fff;
+      font-family: $montserratAlt;
+      text-align: center;
+      font-weight: 500;
+    }
+    h2 {
+      font-size: 46px;
+      span {
+        font-size: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: $montserrat;
+      }
+    }
+    h3 {
+      font-size: 40px;
+    }
+
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: $montserrat;
+      color: #fff;
+      font-size: 18px;
+
+      span {
+        padding: 0 10px;
+      }
+      input {
+        background: #fff;
+        padding: 10px;
+        border: none;
+        font-size: 18px;
+        font-weight: 600;
+        color: #bababa;
+      }
+      ul.services-dropdown {
+        li {
+        }
+      }
+    }
+  }
+}

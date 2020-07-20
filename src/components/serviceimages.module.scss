@@ -1,0 +1,192 @@
+@import "./settings.scss";
+
+.serviceimages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 300px;
+  background: -moz-linear-gradient(0deg, $blue700 0%, $blue500 100%);
+  background: -webkit-linear-gradient(0deg, $blue700 0%, $blue500 100%);
+  background: linear-gradient(0deg, $blue700 0%, $blue500 100%);
+
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+  .container {
+    display: flex;
+    overflow-x: scroll;
+    // overflow-y: hidden;
+    align-items: center;
+    position: relative;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 80%;
+    // -ms-overflow-style: none;
+    // scrollbar-width: none;
+
+    a {
+      text-decoration: none;
+      .card {
+        height: 180px;
+        width: 165px;
+        border-radius: 3px;
+        background: rgb(211, 211, 211);
+        margin: 25px;
+        transition: margin-top 0.5s;
+        display: flex;
+        flex-direction: column;
+
+        svg {
+          * {
+            stroke: $blue400 !important;
+            fill: transparent;
+            transition: stroke 0.5s;
+          }
+        }
+
+        .card_icon {
+          height: 100px;
+          margin: 15px 10px 10px 10px;
+          //   .prefix__cls-1 {
+          //     stroke: $blue400 !important;
+          //   }
+        }
+
+        .card_title {
+          text-align: center;
+          font-family: $montserrat;
+          color: $blue700;
+          text-transform: uppercase;
+          line-height: 24px;
+        }
+      }
+    }
+    .card:hover {
+      margin-top: -10px;
+
+      svg {
+        * {
+          stroke: $orange500 !important ;
+        }
+      }
+    }
+
+    // img {
+    //   background: black;
+    //   opacity: 1;
+    //   width: 100%;
+    //   height: 100%;
+    //   transition: opacity 0.2s, transform 0.2s;
+    //   margin-bottom: -15px;
+    //   display: none;
+    // }
+    // p,
+    // h3 {
+    //   position: absolute;
+    //   opacity: 0;
+    //   margin-top: 20%;
+    //   transition: margin-top 0.2s, opacity 0.1s;
+    // }
+  }
+  .container:hover {
+    img {
+      opacity: 0.5;
+      transform: scale(1.1);
+    }
+    p,
+    h3 {
+      display: block;
+      position: absolute;
+      width: 100%;
+      padding: 0 25%;
+
+      text-align: center;
+      margin-top: 0;
+      opacity: 1;
+    }
+    h3 {
+      top: 40%;
+      color: $orange500;
+      text-shadow: 1px 1px 0px #222;
+    }
+    p {
+      top: 50%;
+      color: $blue700;
+      font-weight: 500;
+      text-shadow: 1px 1px 0px #d3d3d3;
+      b {
+        font-weight: 700;
+        // border-bottom: 2px solid $blue700;
+      }
+      b:hover {
+        color: $orange500;
+        // border-bottom: 2px solid $orange500;
+      }
+    }
+  }
+}
+
+// @media only screen and (min-width: 1000px) and (max-width: 1400px) {
+//   .serviceimages {
+//     height: 350px;
+//     .container:hover {
+//       img {
+//         opacity: 0.5;
+//         transform: scale(1.1);
+//       }
+//       p,
+//       h3 {
+//         padding: 0 10%;
+//         margin-top: -5%;
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 800px) and (max-width: 1000px) {
+//   .serviceimages {
+//     height: 300px;
+//     .container:hover {
+//       img {
+//         opacity: 0.5;
+//         transform: scale(1.1);
+//       }
+//       p,
+//       h3 {
+//         padding: 5%;
+//       }
+//       p {
+//         margin-top: -10%;
+//         font-size: 14px;
+//       }
+//       h3 {
+//         margin-top: -15%;
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 600px) and (max-width: 800px) {
+//   .serviceimages {
+//     height: 250px;
+//     .container:hover {
+//       img {
+//         opacity: 0.5;
+//         transform: scale(1.1);
+//       }
+//       p,
+//       h3 {
+//         padding: 5%;
+//       }
+//       p {
+//         margin-top: -10%;
+//         font-size: 14px;
+//         line-height: 18px;
+//       }
+//       h3 {
+//         font-size: 22px;
+//         margin-top: -15%;
+//       }
+//     }
+//   }
+// }

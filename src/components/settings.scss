@@ -1,0 +1,71 @@
+$orange100: #fde9d3;
+$orange200: #fccea8;
+$orange300: #f6ab7b;
+$orange400: #ee8859;
+$orange500: #e35526;
+$orange600: #c3391b;
+$orange700: #a32213;
+$orange800: #83100c;
+$orange900: #6c070a;
+
+$blue100: #c7eef7;
+$blue200: #92d9f0;
+$blue300: #58aed3;
+$blue400: #2d7ca8;
+$blue500: #03426f;
+$blue600: #02335f;
+$blue700: #01264f;
+$blue800: #001b40;
+$blue900: #001335;
+
+$montserrat: "Montserrat", sans-serif;
+$montserratAlt: "Montserrat Alternates", sans-serif;
+$hind: "Hind", sans-serif;
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/icons/material-design-icons-master/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(/assets/icons/material-design-icons-master/iconfont/MaterialIcons-Regular.woff2)
+      format("woff2"),
+    url(/assets/icons/material-design-icons-master/iconfont/MaterialIcons-Regular.woff)
+      format("woff"),
+    url(/assets/icons/material-design-icons-master/iconfont/MaterialIcons-Regular.ttf)
+      format("truetype");
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  font-family: $hind;
+  font-weight: 500;
+}
